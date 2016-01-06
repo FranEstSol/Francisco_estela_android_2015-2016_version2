@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen
+        android:key="fondos"
+        android:title="Fondos"
+        android:defaultValue="">
+        <Preference
+            android:key="pantalla_inicio_pref"
+            android:title="Pantalla de inicio"
+            android:defaultValue=""/>
+        <Preference
+            android:key="pantalla_bloqueo_pref"
+            android:title="Pantalla de bloqueo"
+            android:defaultValue=""/>
+        <Preference
+            android:key="pantallas_ambas_pref"
+            android:title="Pantallas de inicio y bloqueo"
+            android:defaultValue=""/>
+    </PreferenceScreen>
+
+    <Preference
+        android:key="notificaciones_pref"
+        android:title="Configuracion de las notificaciones"
+        android:defaultValue=""/>
+    <Preference
+        android:key="brillo_pref"
+        android:title="Brillo"
+        android:defaultValue=""/>
+    <CheckBoxPreference
+        android:key="giro_pref"
+        android:title="Girar automaticamente"
+        android:defaultValue="false"/>
+    <ListPreference
+        android:key="tiempo_pref"
+        android:title="Tiempo de espera de la pantalla"
+        android:summary="Define el tiempo de apagado de la pantalla"
+        android:entries="@array/tiempo_espera_pantalla"
+        android:entryValues="@array/tiempo_espera_pantalla"/>
+    <SwitchPreference
+        android:key="salvapantallas_pref"
+        android:title="Salvapantallas"
+        android:defaultValue="false"/>
+</PreferenceScreen>

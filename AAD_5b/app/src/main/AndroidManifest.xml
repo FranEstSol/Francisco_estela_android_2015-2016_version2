@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fran_.aad_5b">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="activity_main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AlumnoActivity"
+            android:label="activity_alumno" />
+        <activity
+            android:name=".ProfesorActivity"
+            android:label="activity_profesor" />
+        <activity
+            android:name=".EliminarActivity"
+            android:label="activity_eliminar" />
+        <activity android:name=".LeerActivity" />
+        <activity android:name=".TableActivity"></activity>
+    </application>
+
+</manifest>

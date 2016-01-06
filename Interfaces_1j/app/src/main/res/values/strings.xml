@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Interfaces_1j</string>
+
+    <string name="welcome">Bienvenido a la aplicacion!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_preferencias">Preferencias</string>
+    <string name="title_activity_fondos">Fondos</string>
+
+    <string name="test">Panel de notificaciones</string>
+</resources>

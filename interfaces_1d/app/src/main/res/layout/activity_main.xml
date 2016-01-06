@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_weight="0"
+        android:id="@+id/upLayout">
+
+        <ToggleButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/backgroundButton"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:checked="false"
+            android:textOff="Fondo rojo!"
+            android:textOn="Fondo normal!" />
+
+        <ToggleButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lettersButton"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:checked="false"
+            android:textOff="Ahora somos negras!"
+            android:textOn="Ahora somos blancas!" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mostrar"
+                android:id="@+id/hiddenMessageCheckBox"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:checked="false"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginRight="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Esto es un mensaje oculto"
+                android:id="@+id/hiddenTextView"
+                android:layout_gravity="center_vertical|right"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Hazme un click largo!"
+            android:id="@+id/longClickTextView"
+            android:layout_margin="5dp"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/downLayout">
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            android:layout_margin="20dp"
+            android:rating="0"
+            android:stepSize="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/ratingTV"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <group android:id="@+id/tools_group">
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="90"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Buscar"/>
+
+    <item
+        android:id="@+id/action_refresh"
+        android:orderInCategory="70"
+        android:showAsAction="withText"
+        android:icon="@drawable/ic_loop_black_24dp"
+        android:title="Recargar"/>
+    </group>
+
+    <group android:id="@+id/zoom_group">
+    <item
+        android:id="@+id/action_zoom_in"
+        android:orderInCategory="80"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_zoom_in_black_24dp"
+        android:title="Zoom in"/>
+    <item
+        android:id="@+id/action_zoom_out"
+        android:orderInCategory="80"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_zoom_out_black_24dp"
+        android:title="Zoom out"/>
+    </group>
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+</menu>

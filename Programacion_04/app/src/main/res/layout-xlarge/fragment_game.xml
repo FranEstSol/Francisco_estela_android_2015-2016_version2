@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.furk.programacion_03.GameFragment"
+    android:orientation="horizontal">
+
+    <!--ZONA DE DADOS -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <!-- DADOS ROJOS-->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/redDice1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/redDice2"
+            android:layout_alignTop="@+id/redDice1"
+            android:layout_toEndOf="@+id/redDice1"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="30dp" />
+
+        <!-- DADOS AZULES-->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/blueDice1"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/redDice1"
+            android:layout_alignStart="@+id/redDice1" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/blueDice2"
+            android:layout_alignTop="@+id/blueDice1"
+            android:layout_alignStart="@+id/redDice2" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/blueDice3"
+            android:layout_marginStart="43dp"
+            android:layout_alignTop="@+id/blueDice2"
+            android:layout_toEndOf="@+id/blueDice2"
+            android:layout_marginLeft="30dp" />
+
+        <!-- DADO DE 12 CARAS-->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/bigDice"
+            android:layout_below="@+id/blueDice1"
+            android:layout_alignStart="@+id/blueDice1"
+            android:layout_marginTop="30dp" />
+
+        <!-- SIGNOS PARA OPERACIONES-->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/plusSimbol"
+            android:layout_below="@+id/bigDice"
+            android:layout_alignStart="@+id/bigDice"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/suma"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/substractionSimbol"
+            android:layout_below="@+id/bigDice"
+            android:layout_alignStart="@+id/blueDice2"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/resta"/>
+
+    </RelativeLayout>
+
+    <!--ZONA DE RESULTADOS -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textViewValor1"
+            android:layout_marginLeft="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp"
+            android:textSize="200px"
+            android:autoText="false"
+            android:text="_" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textViewSigno"
+            android:layout_alignTop="@+id/textViewValor1"
+            android:layout_centerInParent="true"
+            android:textSize="200px"
+            android:text="{}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textViewValor2"
+            android:layout_alignTop="@+id/textViewSigno"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="120dp"
+            android:textSize="200px"
+            android:text="_" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textViewResultado"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="200px"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Interfaces_1f</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="ver_aqui">Ver la web aqui</string>
+    <string name="ver_second">Ver la web en pantalla completa</string>
+    <string name="ver_nav">Ver la web en el navegador</string>
+</resources>

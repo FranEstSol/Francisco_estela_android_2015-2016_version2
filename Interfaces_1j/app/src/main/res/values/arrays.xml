@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tiempo_espera_pantalla">
+        <item>15 Segundos</item>
+        <item>30 Segundos</item>
+        <item>60 Segundos</item>
+        <item>1 Minuto</item>
+        <item>5 Minutos</item>
+        <item>10 Minutos</item>
+    </string-array>
+</resources>

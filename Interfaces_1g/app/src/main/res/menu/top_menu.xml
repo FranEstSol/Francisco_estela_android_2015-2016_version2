@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Menu completo-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Check exterior-->
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/check"
+            android:title="@string/check"
+            android:titleCondensed="Persist" />
+    </group>
+    <!--Boton "next"-->
+    <item
+        android:id="@+id/go_next"
+        android:title="@string/go_next">
+        <!--Menu interior-->
+        <menu>
+            <!--Check interior-->
+            <group android:checkableBehavior="all">
+                <item
+                    android:id="@+id/check2"
+                    android:title="@string/check"
+                    android:titleCondensed="Persist" />
+            </group>
+            <!--RadioButton interno-->
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/option1"
+                    android:title="@string/option_1"
+                    android:titleCondensed="Persist" />
+                <item
+                    android:id="@+id/option2"
+                    android:title="@string/option_2"
+                    android:titleCondensed="Persist" />
+                <item
+                    android:id="@+id/option3"
+                    android:title="@string/option_3"
+                    android:titleCondensed="Persist" />
+
+            </group>
+        </menu>
+    </item>
+</menu>
