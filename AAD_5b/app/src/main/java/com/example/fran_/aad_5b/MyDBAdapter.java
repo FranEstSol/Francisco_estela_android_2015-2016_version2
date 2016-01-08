@@ -15,7 +15,7 @@ import java.util.ArrayList;
  */
 public class MyDBAdapter {
 
-    String TAG ="wan";
+
 
     // Definiciones y constantes
     private static final String DATABASE_NAME = "colegio4.db";
