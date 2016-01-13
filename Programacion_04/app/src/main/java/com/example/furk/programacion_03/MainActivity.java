@@ -5,6 +5,7 @@ import android.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.media.AudioManager;
 import android.os.Bundle;
 
 import android.util.Log;
@@ -18,6 +19,7 @@ public class MainActivity extends Activity implements ListFragment.ListFragmentL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         //Comprobamos que la activity este usando un fragment container que no sea null
         //Dispositivo grande
@@ -77,6 +79,7 @@ public class MainActivity extends Activity implements ListFragment.ListFragmentL
 
                 //Lanzamos la transaccion
                 transaction.commit();
+
             }
             else {
                 Toast.makeText(this,"2", Toast.LENGTH_LONG).show();
